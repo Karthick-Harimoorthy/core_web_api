@@ -30,7 +30,6 @@ namespace core_web_api.Controllers
                 emp_name = request.emp_name,
                 emp_mail_id = request.emp_mail_id,
                 emp_ph_no = request.emp_ph_no,
-                created_time = request.created_time
             };
 
             await _employeeRepository.CreateAsync(employee);
@@ -42,7 +41,6 @@ namespace core_web_api.Controllers
                 emp_mail_id = employee.emp_mail_id,
                 emp_name = employee.emp_name,
                 emp_ph_no = employee.emp_ph_no,
-                created_time = employee.created_time
             };
 
             return Ok();
