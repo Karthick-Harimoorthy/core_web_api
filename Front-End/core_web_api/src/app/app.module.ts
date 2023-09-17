@@ -7,6 +7,7 @@ import { NavbarComponent } from './core/components/navbar/navbar.component';
 import { EmployeeListComponent } from './feature/employee/employee-list/employee-list.component';
 import { AddEmployeeComponent } from './feature/employee/add-employee/add-employee.component';
 import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

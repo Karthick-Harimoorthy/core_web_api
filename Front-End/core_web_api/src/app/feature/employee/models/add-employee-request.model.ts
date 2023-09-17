@@ -1,6 +1,6 @@
 export interface AddEmployeeRequest{
 
-    EmpName:string;
-    EmpPhNo:string;
-    EmpMailID:string;
+    emp_name:string;
+    emp_ph_no:string;
+    emp_mail_id:string;
 }
